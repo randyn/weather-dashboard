@@ -14,5 +14,9 @@ def comparisons():
 def maxTemp():
     return render_template('max-temp.html')
 
+@app.route('/humidity')
+def humidity():
+    return render_template('humidity.html')
+
 if __name__ == "__main__":
     app.run(debug=True)
