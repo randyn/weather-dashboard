@@ -22,5 +22,8 @@ def humidity():
 def cloudiness():
     return render_template('cloudiness.html')
 
+@app.route('/windspeed')
+def windspeed():
+    return render_template('windspeed.html')
 if __name__ == "__main__":
     app.run(debug=True)
