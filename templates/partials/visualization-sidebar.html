@@ -3,10 +3,18 @@
     <div class="card-body">
       <h5 class="card-title">Visualizations</h5>
       <hr/>
-      <img class="visualization-img" src="{{ url_for('static', filename='images/fig1.png') }}"/>
-      <img class="visualization-img" src="{{ url_for('static', filename='images/fig2.png') }}"/>
-      <img class="visualization-img" src="{{ url_for('static', filename='images/fig3.png') }}"/>
-      <img class="visualization-img" src="{{ url_for('static', filename='images/fig4.png') }}"/>
+      <a href="/max-temp">
+        <img class="visualization-img" src="{{ url_for('static', filename='images/fig1.png') }}"/>
+      </a>
+      <a href="/humidity">
+        <img class="visualization-img" src="{{ url_for('static', filename='images/fig2.png') }}"/>
+      </a>
+      <a href="/cloudiness">
+        <img class="visualization-img" src="{{ url_for('static', filename='images/fig3.png') }}"/>
+      </a>
+      <a href="/windspeed">
+        <img class="visualization-img" src="{{ url_for('static', filename='images/fig4.png') }}"/>
+      </a>
     </div>
   </div>
 </div>
