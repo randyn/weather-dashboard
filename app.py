@@ -25,5 +25,10 @@ def cloudiness():
 @app.route('/windspeed')
 def windspeed():
     return render_template('windspeed.html')
+
+@app.route('/data')
+def data():
+    return render_template('data.html')
+
 if __name__ == "__main__":
     app.run(debug=True)
