@@ -15,7 +15,7 @@
 
 <body style="background-color: #eaeaea;">
   <nav class="navbar bg-light navbar-light navbar-expand-lg">
-    <a class="navbar-brand latitude-brand" href="#">Latitude</a>
+    <a class="navbar-brand latitude-brand" href="/">Latitude</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -33,7 +33,7 @@
           </div>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Comparison</a>
+          <a class="nav-link" href="/comparisons">Comparison</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Data</a>
@@ -45,10 +45,12 @@
   <div class="container">
 
     <div class="row">
-      <div class="main-body col-md-8">
+      <div class="main-body col-lg-8">
         <div class="card">
           <div class="card-body">
             <h5 class="card-title">Summary: Latitude vs. X</h5>
+            <hr/>
+            <img class="visualization-img" src="{{ url_for('static', filename='images/fig1.png') }}"/>
             <div class="card-text">
               <p>The purpose of this project was to analyze how weather changes as you get closer to the equator. To accomplish this analysis, we first pulled data from the OpenWeatherMapAPI to assemble a dataset on over 500 cities.</p>
               <p>
@@ -59,10 +61,15 @@
         </div>
       </div>
 
-      <div class="sidebar col-md-4">
+      <div class="sidebar col-lg-4">
         <div class="card">
           <div class="card-body">
             <h5 class="card-title">Visualizations</h5>
+            <hr/>
+            <img class="visualization-img" src="{{ url_for('static', filename='images/fig1.png') }}"/>
+            <img class="visualization-img" src="{{ url_for('static', filename='images/fig2.png') }}"/>
+            <img class="visualization-img" src="{{ url_for('static', filename='images/fig3.png') }}"/>
+            <img class="visualization-img" src="{{ url_for('static', filename='images/fig4.png') }}"/>
           </div>
         </div>
       </div>

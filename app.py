@@ -6,9 +6,9 @@ app = Flask(__name__)
 def home():
     return render_template("index.html")
 
-@app.route("/index.css")
-def css():
-    return render_template("index.css")
+@app.route("/comparisons")
+def comparisons():
+    return render_template("index.html")
 
 if __name__ == "__main__":
     app.run(debug=True)
