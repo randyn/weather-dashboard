@@ -18,5 +18,9 @@ def maxTemp():
 def humidity():
     return render_template('humidity.html')
 
+@app.route('/cloudiness')
+def cloudiness():
+    return render_template('cloudiness.html')
+
 if __name__ == "__main__":
     app.run(debug=True)
