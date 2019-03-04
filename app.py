@@ -8,7 +8,7 @@ def home():
 
 @app.route("/comparisons")
 def comparisons():
-    return render_template("index.html")
+    return render_template("comparisons.html")
 
 if __name__ == "__main__":
     app.run(debug=True)
