@@ -1,0 +1,26 @@
+{% extends "base-template.html" %}
+{% block title %}Landing Page{% endblock %}
+{% block content %}
+  <div class="container">
+
+    <div class="row">
+      <div class="main-body col-lg-8">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Max Temperature</h5>
+            <hr/>
+            <img class="comparison-img" src="{{ url_for('static', filename='images/fig1.png') }}"/>
+            <div class="card-text">
+              <p>
+                As expected, the weather becomes significantly warmer as one approaches the equator (0 Deg. Latitude). 
+                More interestingly, however, is the fact that the souther hemisphere tends to be warmer this time of year than the northern hemisphere.
+                This may be due to the tilt tilt of the earth at the time of the year this data was gathered.
+              </p>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    {% include "partials/visualization-sidebar.html" %}
+  </div>
+{% endblock %}
